@@ -1,0 +1,10 @@
+1.create table Coun(country_id int,country_name text, region_id int);
+
+2.drop table if exists Coun;
+  create table Coun(country_id int,country_name text, region_id int);
+
+3.create table Dup_Coun(country_id int,country_name text, region_id int);
+
+4.create table Duplicate_table as Select * from Coun;
+
+5.create table Constraints_Coun(country_id character varying(10) not null,country_name character varying(20) not null,region_id numeric(10,0));

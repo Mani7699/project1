@@ -1,0 +1,39 @@
+package fstjava;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class HashsetDemo {
+
+	public static void main(String[] args) {
+		
+		
+		Set<String> setdemo1 = new LinkedHashSet<String>();
+		Set<String> setdemo = new HashSet<String>();
+		
+		setdemo.add("Ajay");
+		setdemo.add("Marrie");
+		setdemo.add("Sneha");
+		setdemo.add("Ajay");
+		setdemo.add("Marrie");
+		setdemo.add("Pavan");
+		setdemo.add("Harsha");
+		setdemo.add("Mahesh");
+
+		
+		Iterator iterator = setdemo.iterator();
+
+		if (iterator != null) {
+
+			while (iterator.hasNext()) {
+
+				System.out.println(iterator.next());
+
+			}
+
+		}
+	}
+
+}
